@@ -18,6 +18,7 @@ listdir = os.listdir(dir)
 
 print(listdir)
 print("The number of dataset:", len(listdir))
+print("hello world")
 
 num = ['B05', 'B07', 'B18', 'B33', 'B34', 'B46', 'B47', 'B48']
 for i in range(len(listdir)):
