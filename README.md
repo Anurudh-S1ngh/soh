@@ -47,7 +47,7 @@
   <img src="https://github.com/user-attachments/assets/a85bd139-6aa5-4e9d-bce4-9c5352c57842" width="48%">
   <br>
   <h1>B07 70%</h1>
-  <img src="https://github.com/user-attachments/assets/4399f485-8c2c-40ff-88d8-1d77d4e689ab">
+  <img src="https://github.com/user-attachments/assets/4399f485-8c2c-40ff-88d8-1d77d4e689ab" width="48%">
 </div>  
 
 ## Results
