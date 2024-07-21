@@ -22,7 +22,7 @@
 ### **4**. Long Short Term Memory | [Code](https://github.com/Anurudh-S1ngh/soh/blob/main/4_LSTM_with_SoH/SoH_estimation_with_LSTM.ipynb)
 - Start at **50%** Cycle
 <div align="center">
-<img src='https://github.com/user-attachments/assets/fc6ba164-66e8-4d49-9575-3c8d93479102">
+<img src="https://github.com/user-attachments/assets/fc6ba164-66e8-4d49-9575-3c8d93479102">
 
 </div>  
 
