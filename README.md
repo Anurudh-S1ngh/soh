@@ -11,7 +11,7 @@
 <img src="https://github.com/OH-Seoyoung/SoH_estimation_of_Lithium-ion_battery/blob/master/1_Calculation_and_Visulaliztion_of_SoH/fig/SoH_B47.jpg?raw=True" width="48%"> <br>
 </div>  
 
-### **2**. Eliminating outliers with quantile | [Code](https://github.com/OH-Seoyoung/SoH_estimation_of_Lithium-ion_battery/blob/master/2_Elimination_of_outliers/Calculation_and_Visualization_of_refined_SoH.ipynb)  
+### **2**. Eliminating outliers with quantile | [Code](https://github.com/Anurudh-S1ngh/soh/blob/main/1_Calculation_and_Visulaliztion_of_SoH/Calculation_and_Visualization_of_SoH.ipynb)  
 
 <div align="center">
 <img src="https://github.com/OH-Seoyoung/SoH_estimation_of_Lithium-ion_battery/blob/master/2_Elimination_of_outliers/fig/A_group.jpg?raw=True" width="48%">
