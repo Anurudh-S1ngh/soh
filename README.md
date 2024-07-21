@@ -31,6 +31,7 @@
     <img src="https://github.com/user-attachments/assets/4c81143b-bd10-4e58-8584-4bd64ba3d4de" width="48%">
   </div>
   <div>
+    <h2>B07 50%</h2>
     <img src="https://github.com/user-attachments/assets/ffcbf183-80d9-41ea-be6c-138c543218bb" width = "48%">
   </div>
 </div>
