@@ -106,24 +106,24 @@ history = best_model.fit(trainX, trainY, epochs=50, batch_size=20, validation_da
 
 # Save the best model
 model_json = best_model.to_json()
-with open('D:/SOH_RUL_Estimation-main/4_LSTM_with_SoH/B48_best_model.json', 'w') as json_file:
+with open('C:/soh-main/4_LSTM_with_SoH/B48_best_model.json', 'w') as json_file:
     json_file.write(model_json)
 
 # Correct filename extension for saving weights
-best_model.save_weights('D:/SOH_RUL_Estimation-main/4_LSTM_with_SoH/B48_best_weights.weights.h5')
+best_model.save_weights('C:/soh-main/4_LSTM_with_SoH/B48_best_weights.weights.h5')
 
 # ## 4. Load Trained Best Model
 
 from keras.models import model_from_json 
 
 # Load the model structure
-with open('D:/SOH_RUL_Estimation-main/4_LSTM_with_SoH/B48_best_model.json', 'r') as json_file:
+with open('C:/soh-main/4_LSTM_with_SoH/B48_best_model.json', 'r') as json_file:
     loaded_model_json = json_file.read() 
 
 loaded_model = model_from_json(loaded_model_json)
 
 # Load model weights with the correct filename
-loaded_model.load_weights('D:/SOH_RUL_Estimation-main/4_LSTM_with_SoH/B48_best_weights.weights.h5')
+loaded_model.load_weights('C:/soh-main/4_LSTM_with_SoH/B48_best_weights.weights.h5')
 print("Loaded best model from disk")
 
 
@@ -152,15 +152,15 @@ plt.legend(prop={'size': 16})
 plt.ylabel('SoH', fontsize=15)
 plt.xlabel('Discharge cycle', fontsize=15)
 plt.title("SOH Prediction", fontsize=15)
-plt.savefig('D:/SOH_RUL_Estimation-main/4_LSTM_with_SoH/50%/fig/B48_LSTM_best.jpg')
+plt.savefig('C:/soh-main/4_LSTM_with_SoH/50%/fig/B48_LSTM_best.jpg')
 plt.show()
 
 
 # Print RMSE and MAE
 rmse = math.sqrt(mean_squared_error(testY, yhat))
 mae = mean_absolute_error(testY, yhat)
-print('Test RMSE: %.3f' % rmse)
-print('Test MAE: %.3f' % mae)
+print('Test RMSE: %.7f' % rmse)
+print('Test MAE: %.7f' % mae)
 
 # ## 6. Implement Stacking
 
@@ -212,11 +212,11 @@ plt.legend(prop={'size': 16})
 plt.ylabel('SoH', fontsize=15)
 plt.xlabel('Discharge cycle', fontsize=15)
 plt.title("Stacked LSTM SOH Prediction", fontsize=15)
-plt.savefig('D:/SOH_RUL_Estimation-main/4_LSTM_with_SoH/50%/fig/B48_LSTM_stacked.jpg')
+plt.savefig('C:/soh-main/4_LSTM_with_SoH/50%/fig/B48_LSTM_stacked.jpg')
 plt.show()
 
 # Print RMSE and MAE for the stacked model
 stacked_rmse = math.sqrt(mean_squared_error(testY, stacked_predictions))
 stacked_mae = mean_absolute_error(testY, stacked_predictions)
-print('Stacked Model Test RMSE: %.3f' % stacked_rmse)
-print('Stacked Model Test MAE: %.3f' % stacked_mae)
+print('Stacked Model Test RMSE: %.7f' % stacked_rmse)
+print('Stacked Model Test MAE: %.7f' % stacked_mae)
